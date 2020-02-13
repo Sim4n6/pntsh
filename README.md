@@ -1,3 +1,3 @@
 # pntsh
 
-`curl http://pntsh.herokuapp.com/smbclient`
+`curl pntsh.herokuapp.com/smbclient`
