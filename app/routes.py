@@ -18,4 +18,4 @@ def get_cmd(cmd):
     if filename_path.exists():
         return render_template(filename)
     else :
-        return "File not accessible"
+        return "File not accessible\n"
