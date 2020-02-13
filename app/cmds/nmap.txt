@@ -1,5 +1,5 @@
-
-TCP SYN scan : -sS
+# Nmap 
+# TCP SYN scan : -sS
  - half-opening scan, gather informations without finishing the TCP handshake. May be blocked by a Firewall.
 sudo nmap -sS 10.10.10.10
 
@@ -26,3 +26,4 @@ sudo nmap -sV 10.10.10.10
 Idle scan : 
  - maintain invisibility using a zombie machine from LAN of the target machine.
 sudo nmap -sI Z.Z.Z.Z T.T.T.T
+
