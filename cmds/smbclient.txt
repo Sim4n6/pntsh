@@ -1,0 +1,4 @@
+# smbclient 
+# 
+smbclient -L 10.10.10.178
+
