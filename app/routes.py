@@ -5,7 +5,7 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    get_cmd("index")
+    return get_cmd("index")
 
 
 @app.route('/<path:cmd>')
