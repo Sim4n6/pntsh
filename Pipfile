@@ -9,6 +9,7 @@ verify_ssl = true
 flask = "*"
 python-dotenv = "*"
 gunicorn = "*"
+pygments = "*"
 
 [requires]
 python_version = "3.7"

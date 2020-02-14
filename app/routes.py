@@ -1,6 +1,8 @@
 from flask import render_template
 from pathlib import Path
+
 from app import app
+from app.utils import colorize
 
 @app.route('/')
 @app.route('/index')
@@ -16,6 +18,7 @@ def get_cmd(cmd):
     cmds_path = Path.cwd().joinpath("app","cmds")
     filename_path = cmds_path.joinpath(filename)
     if filename_path.exists():
-        return render_template(filename)
+        text = filename_path.read_text()
+        return colorize(text)
     else :
         return "File not accessible\n"
