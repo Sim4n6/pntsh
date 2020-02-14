@@ -1,5 +1,6 @@
 from flask import render_template
 from pathlib import Path
+from markupsafe import escape
 
 from app import app
 from app.utils import colorize
@@ -12,9 +13,9 @@ def index():
     return render_template("index.txt", cmds_available=cmds_available )
 
 
-@app.route('/<path:cmd>')
-def get_cmd(cmd):
-    filename = cmd + ".txt"
+@app.route('/<cmd>')
+def get_cmd(cmd=None):
+    filename = escape(cmd) + ".txt"
     cmds_path = Path.cwd().joinpath("app","cmds")
     filename_path = cmds_path.joinpath(filename)
     if filename_path.exists():
