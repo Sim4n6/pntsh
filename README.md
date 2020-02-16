@@ -4,8 +4,8 @@
 
 # Usage
 
- - print the welcome page : `curl pntsh.herokuapp.com/`
+ - print the welcome page : `curl pnt.sh`
  
- - list all documented commands :`curl pntsh.herokuapp.com/list`
+ - list all documented commands :`curl pnt.sh/list`
  
- - show the documentation of the command `smbclient` : `curl pntsh.herokuapp.com/smbclient` 
+ - show the documentation of the command `smbclient` : `curl pnt.sh/smbclient` 
