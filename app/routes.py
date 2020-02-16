@@ -8,10 +8,14 @@ from app.utils import colorize
 @app.route('/')
 @app.route('/index')
 def index():
-    cmds_path = Path.cwd().joinpath("app","cmds")
-    cmds_available = [ x.stem for x in cmds_path.glob("*.txt") ]
-    return render_template("index.txt", cmds_available=cmds_available )
+    return render_template("index.txt")
 
+
+@app.route('/list')
+def list():
+    cmds_path = Path.cwd().joinpath("app","cmds")
+    cmds_available = [ x.stem for x in cmds_path.glob("*.txt") if x.stem not in ["index", "list"] ]
+    return render_template("list.txt", cmds_available=cmds_available)
 
 @app.route('/<cmd>')
 def get_cmd(cmd=None):
