@@ -1,0 +1,3 @@
+Available documented commands : 
+{% for x in cmds_available %}- {{ x }}
+{% endfor %}

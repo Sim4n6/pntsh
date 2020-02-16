@@ -11,8 +11,3 @@
 
 Follow me on twitter @Sim4n6
 
-Available command's documentation: 
-
-{% for x in cmds_available %}
- - {{ x }}
-{% endfor %}
