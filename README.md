@@ -1,10 +1,10 @@
-# pntsh
+# PNT.sh
 
 ...
 
 # Usage
 
- - print the welcome page : `curl pnt.sh`
+ - access the welcome page : `curl pnt.sh`
  
  - list all documented commands :`curl pnt.sh/list`
  
