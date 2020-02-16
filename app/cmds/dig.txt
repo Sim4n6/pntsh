@@ -1,0 +1,15 @@
+# DIG
+# dig will let you perform any valid DNS query: 
+# A (the IP address).
+# TXT (text annotations).
+# MX (mail exchanges).
+# NS nameservers.
+
+# Get the addresses for perdu.com.
+dig perdu.com A +noall +answer 
+
+# Query using a specific nameserver.
+dig @ns1.ddh.com perdu.com 
+
+# trace the taken path taken.
+ dig perdu.com +trace
