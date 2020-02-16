@@ -1,29 +1,24 @@
 # Nmap 
-# TCP SYN scan : -sS
- - half-opening scan, gather informations without finishing the TCP handshake. May be blocked by a Firewall.
+# TCP SYN scan : half-opening scan, gather informations without finishing the TCP handshake. May be blocked by a Firewall.
 sudo nmap -sS 10.10.10.10
 
-TCP Connect() scan :
- - a scan that require a TCP handshake completion.
+# TCP Connect() scan : a scan that require a TCP handshake completion.
 sudo nmap -sT 10.10.10.10
 
-UDP scan : 
- - look for open UDP ports. 
+# UDP scan : look for open UDP ports. 
 sudo nmap -sU 10.10.10.10
 
-FIN scan : 
- - scan using the sending of a FIN flag.
+# FIN scan : scan using the sending of a FIN flag.
 sudo nmap -sF 10.10.10.10
 
-Ping scan : 
- - check whether the host is alive and active.
+# Ping scan : check whether the host is alive and active.
 sudo nmap -sP 10.10.10.10
 
-Version detect scan :
- - help detect the software version used on the target machine.
+# Version detect scan : help detect the software version used on the target machine.
 sudo nmap -sV 10.10.10.10
 
-Idle scan : 
- - maintain invisibility using a zombie machine from LAN of the target machine.
+# Idle scan : maintain invisibility using a zombie machine from LAN of the target machine.
 sudo nmap -sI Z.Z.Z.Z T.T.T.T
 
+# SYN scan with version detect of two ports with scripts use.
+nmap -sS -sV --script smb-enum-shares.nse,smb-os-discovery.nse -p445,139 10.10.10.178
