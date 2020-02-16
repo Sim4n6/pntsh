@@ -2,8 +2,10 @@
 
 ...
 
-## How to use PNTSH 
+# Usage
 
- - `curl pntsh.herokuapp.com/` : print the welcome page.
- - `curl pntsh.herokuapp.com/list` : list all documented commands.
- - `curl pntsh.herokuapp.com/smbclient` : print the documentation of the command `smbclient`.
+ - print the welcome page : `curl pntsh.herokuapp.com/`
+ 
+ - list all documented commands :`curl pntsh.herokuapp.com/list`
+ 
+ - show the documentation of the command `smbclient` : `curl pntsh.herokuapp.com/smbclient` 
