@@ -1,0 +1,5 @@
+# gobuster
+#
+#
+# 
+gobuster dir -u http://10.10.10.10:80/ -w /usr/share/wordlists/dirb/small.txt
