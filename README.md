@@ -1,6 +1,6 @@
 # PNT.sh
 
-![pntsh-demo1.gif](https://i.postimg.cc/cCrwWS1p/pntsh-demo1.gif)
+![pntsh-demo1.gif](/demo/pntsh-demo1.gif)
 
 # Usage
 
