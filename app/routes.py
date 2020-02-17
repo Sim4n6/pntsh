@@ -1,9 +1,10 @@
-from flask import render_template
+from flask import render_template, abort
 from pathlib import Path
 from markupsafe import escape
 
 from app import app
 from app.utils import colorize
+from app.errors import page_not_found
 
 @app.route('/')
 @app.route('/index')
@@ -17,6 +18,7 @@ def list():
     cmds_available = [ x.stem for x in cmds_path.glob("*.txt") if x.stem not in ["index", "list"] ]
     return render_template("list.txt", cmds_available=cmds_available)
 
+
 @app.route('/<cmd>')
 def get_cmd(cmd=None):
     filename = escape(cmd) + ".txt"
@@ -26,4 +28,4 @@ def get_cmd(cmd=None):
         text = filename_path.read_text()
         return colorize(text)
     else :
-        return "File not accessible\n"
+        abort(404)
