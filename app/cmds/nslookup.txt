@@ -1,0 +1,27 @@
+# nslookup
+# allows querying DNS to obtain domain names or IP addresses, mapping or any other DNS Records.
+
+# Obtain the A record (address) of the domain name
+nslookup dooomain.com
+
+# Check the NS record of the domain name
+nslookup -type=ns dooomain.com
+
+# Retrieve the SOA record of the domain name
+nslookup -type=soa doomain.com
+
+# Retrieve the MX record of the domain name
+nslookup -type=mx doomain.com
+
+# Retrieve all records of the domain name
+nslookup -type=any doomain.com
+
+# Check for the records using a specific DNS server
+nslookup dooomain.com ns1.naame.com
+
+# Reverse DNS to obtain hostname based on IP address
+nslookup 10.10.10.52
+
+# Enable debug mode 
+nslookup -debug dooomain.com
+
