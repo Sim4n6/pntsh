@@ -1,0 +1,5 @@
+# cURL
+#
+# Follows redirect (301)
+curl -L http://10.10.10.10:55131/
+
