@@ -2,7 +2,7 @@
 # TCP SYN scan : half-opening scan, gather informations without finishing the TCP handshake. May be blocked by a Firewall.
 nmap -sS 10.10.10.10
 
-# TCP Connect() scan : a scan that require a TCP handshake completion.
+# TCP Connect() scan : a scan that require a TCP handshake completion. Can be easily detected.
 nmap -sT 10.10.10.10
 
 # UDP scan : look for open UDP ports. 
@@ -10,6 +10,8 @@ nmap -sU 10.10.10.10
 
 # FIN scan : scan using the sending of a FIN flag.
 nmap -sF 10.10.10.10
+
+# XMAS scan
 
 # Ping scan : check whether the host is alive and active.
 nmap -sP 10.10.10.10
