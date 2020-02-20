@@ -3,7 +3,7 @@ name: Issue
 about: Bug report - feature request - help wanted - imrpvement suggest - etc
 title: ''
 labels: ''
-assignees: ''
+assignees: 'Sim4n6'
 
 ---
 
