@@ -1,4 +1,4 @@
-# PNT.sh [![Build Status](https://travis-ci.com/Sim4n6/pntsh.svg?token=dD5uGPXDLS2b1V9H5qQr&branch=master)](https://travis-ci.com/Sim4n6/pntsh)
+# :bowtie: PNT.sh [![Build Status](https://travis-ci.com/Sim4n6/pntsh.svg?token=dD5uGPXDLS2b1V9H5qQr&branch=master)](https://travis-ci.com/Sim4n6/pntsh)
 
 ![pntsh-demo1.gif](/demo/pntsh-demo1.gif)
 
