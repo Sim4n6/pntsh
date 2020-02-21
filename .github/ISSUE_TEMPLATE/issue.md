@@ -1,6 +1,6 @@
 ---
-name: Issue
-about: Bug report - feature request - help wanted - imrpvement suggest - etc
+name: Report an issue
+about: Bug report - Feature request - Help wanted - Suggest an improvement - etc
 title: ''
 labels: ''
 assignees: 'Sim4n6'
