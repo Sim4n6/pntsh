@@ -1,5 +1,4 @@
 # Nmap 
-#
 # TCP SYN scan : half-opening scan, gather informations without finishing the TCP handshake. May be blocked by a Firewall.
 nmap -sS 10.10.10.10
 
