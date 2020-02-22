@@ -1,4 +1,3 @@
 # wfuzz : Web Fuzzer
-#
 #  
 wfuzz -w /usr/share/wordlists/wfuzz/general/big.txt --hc 404 http://docker.hackthebox.eu:30239/FUZZ
