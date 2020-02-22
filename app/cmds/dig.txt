@@ -12,4 +12,7 @@ dig perdu.com A +noall +answer
 dig @ns1.ddh.com perdu.com 
 
 # trace the taken path taken.
- dig perdu.com +trace
+dig perdu.com +trace
+
+# Do a DNS transfert zone via ns.server.org on port 50001 
+dig -p 50001 @ns1.server.org domaaaain.org -t AXFR
