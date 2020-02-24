@@ -12,7 +12,7 @@ class ListTests(unittest.TestCase):
         app.testing = True
         self.client = app.test_client()
 
-    def test_list_page(self):
+    def test_list_status(self):
         response = self.client.get('/list', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
