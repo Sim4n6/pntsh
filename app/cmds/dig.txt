@@ -11,8 +11,8 @@ dig perdu.com A +noall +answer
 # Query using a specific nameserver.
 dig @ns1.ddh.com perdu.com 
 
-# trace the taken path taken.
+# Trace the path taken.
 dig perdu.com +trace
 
-# a DNS transfert zone via ns.server.org on port 50001 
+# request a DNS zone transfert to ns.server.org on port 50001 
 dig -p 50001 @ns1.server.org domaaaain.org -t AXFR
