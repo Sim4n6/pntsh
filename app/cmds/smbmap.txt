@@ -3,5 +3,5 @@
 # Enumerate Samba shares on the host with an access john/pass.
 smbmap -u john -p pass -d workgroup -H 192.168.0.1
 
-# Recursively list dirs and files in all shares.
-smbmap -u john -p pass -d workgroup -R
+# Recursively list dirs and files in all shares in the host
+smbmap -u john -p pass -d workgroup -R -H 192.168.0.1
