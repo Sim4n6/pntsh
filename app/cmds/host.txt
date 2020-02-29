@@ -1,0 +1,9 @@
+# Host
+# DNS lookup for IP address 
+host www.domaaain.com
+
+# DNS lookup for IP address based on a domain server
+host www.domaaain.com 4.4.4.4
+
+# Lookup for a hostname based on an IP address (can return multiple results)
+host X.X.X.X
