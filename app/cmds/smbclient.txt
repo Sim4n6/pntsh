@@ -2,3 +2,5 @@
 # List all shares in the host 10.10.10.178
 smbclient -L 10.10.10.178
 
+# connect to the share Data with the username theUser, password will be asked for.
+smbclient \\\\10.10.10.178\\Data -U theUser 
