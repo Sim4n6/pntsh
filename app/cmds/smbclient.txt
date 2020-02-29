@@ -1,4 +1,4 @@
 # smbclient 
-# 
+# List all shares in the host 10.10.10.178
 smbclient -L 10.10.10.178
 
