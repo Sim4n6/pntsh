@@ -1,15 +1,18 @@
-from flask import render_template, abort
+from flask import render_template, abort, request
 from pathlib import Path
 from markupsafe import escape
 
 from app import app
-from app.utils import colorize
+from app.utils import colorize, is_from_cmdline
 from app.errors import page_not_found
 
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template("index.txt")
+    if is_from_cmdline(request.user_agent.browser):
+        return render_template("index.txt")
+    else:
+        return render_template("index.html")
 
 
 @app.route('/list')

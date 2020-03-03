@@ -32,3 +32,11 @@ class PntLexer(RegexLexer):
 
 def colorize(text):
     return highlight(text, PntLexer(), TerminalTrueColorFormatter(style=MyStyle))
+
+
+def is_from_cmdline(name_browser):
+    print(name_browser)
+    if name_browser in ["firefox", "chrome", "edge", "konqueror", "mozilla", "microsoft", "opera", "netscape", "safari"]: # TODO to improve
+        return False
+    else:
+        return True
