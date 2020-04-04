@@ -1,5 +1,5 @@
 # gobuster
 #
 #
-# 
-gobuster dir -u http://10.10.10.10:80/ -w /usr/share/wordlists/dirb/small.txt
+# list all directories using wordlist, on the url mentionned, with expanded foud urls.
+gobuster dir -e -u http://10.10.10.10:80/ -w /usr/share/wordlists/dirb/small.txt
