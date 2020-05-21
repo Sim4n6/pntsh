@@ -3,3 +3,5 @@
 # Follows redirect (301)
 curl -L http://10.10.10.10:55131/
 
+# Upload a file using cURL
+curl -F 'avatar=@/home/user/hello.txt' http://localhost/upload
