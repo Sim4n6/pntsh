@@ -1,5 +1,15 @@
-# dotdotpwn
+# Dotdotpwn
 # Directory traversal and fuzzer.
 
 # Directory traversal for url http://127.0.0.1:65412/ at variable 'path' looking for /etc/passwd (root:)
 ./dotdotpwn.pl -m http-url -u 'http://127.0.0.1:65412/?path=TRAVERSAL' -o 'unix' -k 'root:'
+
+# The Traversal Engine will create fuzz pattern strings with 8 levels of deepness, then
+# DotDotPwn will send 5 requests per second (-t) against the Web server (-m) listening on port 
+# 8080 (-x) and installed in 192.168.1.1 (-h). Additionally, this will try to retrieve the 
+# /etc/hosts file (-f) and to avoid false positives, an extra check will be done against the 
+# server's response in order to find the "localhost" keyword within, if so, it's considered 
+# vulnerable. Also, for extra information, the webserver's banner will be retrieved (-s).
+# DotDotPwn will save the scan results in a filename called 192.168.1.1_<date>_<hour> in the 
+# Reports folder.
+./dotdotpwn.pl -m http -h 192.168.1.1 -x 8080 -f /etc/hosts -k "localhost" -d 8 -t 200 -s
