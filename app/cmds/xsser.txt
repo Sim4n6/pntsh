@@ -1,0 +1,4 @@
+# XSSer
+
+# fuzz xsser on the provided url, for GET HTTP method on variable 'v'. 
+xsser -u http://127.0.0.1:65412 -g /?v=XSS
