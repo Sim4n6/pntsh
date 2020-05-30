@@ -1,0 +1,4 @@
+# Subfinder 
+
+# find all sub domains of hackerone.com
+subfinder -d hackerone.com -v 
