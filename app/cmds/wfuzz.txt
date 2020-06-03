@@ -1,4 +1,4 @@
 # wfuzz : Web Fuzzer
 
-# Fuzz for a directory using the big.txt wordlist by hiding responses with 404 status code.  
-wfuzz -w /usr/share/wordlists/wfuzz/general/big.txt --hc 404 http://domaaain.com:30200/FUZZ/
+# Fuzz for a directory using the big.txt wordlist by hiding responses with 404 status code with color support. 
+wfuzz -c -w /usr/share/wordlists/wfuzz/general/big.txt --hc 404 http://domaaain.com:30200/FUZZ/
