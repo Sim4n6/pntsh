@@ -1,1 +1,0 @@
-theiframe.postMessage(domain.document)
