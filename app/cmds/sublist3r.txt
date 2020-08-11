@@ -1,0 +1,1 @@
+./sublist3r.py -d thewebsite.com -b -t 50 -p 80,443,22,21
