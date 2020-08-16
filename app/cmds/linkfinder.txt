@@ -1,0 +1,3 @@
+# linkfinder
+# find all endpoints and (-d) recursively parse all javascript located in a page also.
+linkfinder.py -i https://my-juice-shop561.herokuapp.com/ -d
