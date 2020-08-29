@@ -128,6 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# pythonenv3.8
+pythonenv3.8/
 
 # VSCode settings
 .vscode/
