@@ -1,0 +1,2 @@
+# wafw00f detect if a website is behind a WAF
+wafw00f https://www.mywebsite.com
